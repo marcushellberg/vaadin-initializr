@@ -141,6 +141,13 @@ export class VaadinInitializr extends LitElement {
       ...this.config,
       [property]: value
     };
+
+    if(!this.isLanguageSupported(this.config.language)) {
+      this.config.language = "java";
+    }
+    if(!this.isBuildSupported(this.config.build)) {
+      this.config.build = "maven";
+    }
   }
 
   protected render() {
