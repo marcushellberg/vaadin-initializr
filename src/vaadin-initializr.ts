@@ -239,7 +239,6 @@ export class VaadinInitializr extends LitElement {
             <vaadin-button theme="primary">Download starter</vaadin-button>
           </a>
         </div>
-        <pre>${this.getDownloadLink()}</pre>
       </div>
 
     `;
